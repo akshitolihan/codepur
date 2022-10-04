@@ -24,6 +24,29 @@ a {
     background: black;
   }
 }
+
+/* My CSS */
+
+/* Active Navbar Link */
+.active-link{
+  color: #FEB764;
+}
+
+
+.typed-out{
+  overflow: hidden;
+  /* border-right: 10px solid orange; */
+  white-space: nowrap;
+  animation: 
+  typing 1s forwards;
+  font-size: 10px;
+  width: auto;
+  /* justify-content: center; */
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
