@@ -13,8 +13,12 @@ module.exports = {
     },
     animation: {
       'bounce1': 'bounce 2s infinite;',
+    },
+    backgroundImage: {
+      'cod': "url('/bg2.svg')",
     }
     },
+
   },
   plugins: [],
 }
