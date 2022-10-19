@@ -3,7 +3,7 @@ import Image from "next/image";
 import Code1 from "../components/Code1";
 import Code from "../components/Code1";
 import extra from "../styles/Extra.module.css";
-
+import Video from "../components/Video";
 import Navbar from "../components/Navbar";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 export default function Home() {
@@ -109,30 +109,30 @@ export default function Home() {
         </section>
       </section>
       <section>
-      <section className="grid justify-evenly py-16">
-        <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
-          Reading Mateirial!
-        </h1>
-        <section className="max-w-2xl p-8 mb bg-[#ffffff] rounded-lg text-[#2F4858] text-justify shadow-even">
-          <h1 className="py-2 text-2xl font-bold ">
-            What is computer Programming?
+        <section className="grid justify-evenly py-16">
+          <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
+            Reading Mateirial!
           </h1>
-          <p>
-            Computer programming is the process of performing a particular
-            computation, usually by designing and building an executable
-            computer program. Programming involves tasks such as analysis,
-            generating algorithms, profiling algorithms accuracy and resource
-            consumption, and the implementation of algorithms
-          </p>
+          <section className="max-w-2xl p-8 mb bg-[#ffffff] rounded-lg text-[#2F4858] text-justify shadow-even">
+            <h1 className="py-2 text-2xl font-bold ">
+              What is computer Programming?
+            </h1>
+            <p>
+              Computer programming is the process of performing a particular
+              computation, usually by designing and building an executable
+              computer program. Programming involves tasks such as analysis,
+              generating algorithms, profiling algorithms accuracy and resource
+              consumption, and the implementation of algorithms
+            </p>
+          </section>
         </section>
-      </section>
-      <div className="mt- py-16">
-        <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
-          Coding Mateirial
-        </h1>
-        <Code1
-          heading="Program to print in C++"
-          code={`#include <iostream>
+        <div className="mt- py-16">
+          <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
+            Coding Mateirial
+          </h1>
+          <Code1
+            heading="Program to print in C++"
+            code={`#include <iostream>
 
 using namespace std;
 
@@ -142,26 +142,25 @@ int main()
 
     return 0;
 }`}
-        />
-      </div>
+          />
+        </div>
       </section>
       <section className="grid justify-evenly py-16  my-4 ">
         <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           Videos
         </h1>
-        <section className="max-w-2xl p-8 mb-10 bg rounded-lg text-[#2F4858] text-justify shadow-even">
-          <h1 className="py-2 text-2xl font-bold ">
-            What is computer Programming?
-          </h1>
-          <p>
-            Computer programming is the process of performing a particular
-            computation, usually by designing and building an executable
-            computer program. Programming involves tasks such as analysis,
-            generating algorithms, profiling algorithms accuracy and resource
-            consumption, and the implementation of algorithms
-          </p>
+        <section className="flex p-2 bg-[#69F0AE] rounded-lg">
+          <Video
+          className=""
+            title="Installation of R and R Studio | How to install R | How to install R Studio | Data Science in R Lang "
+            id="FWDhVBkcTqo"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in rerum neque sequi assumenda quos doloremque? Itaque officia quasi totam ut voluptatum ea molestiae sequi in nobis? Voluptates, aliquam ipsum?"
+            width="w-[664px]"
+          />
         </section>
       </section>
+
+
     </>
   );
 }

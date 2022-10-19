@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.2",
+    "lite-youtube-embed": "^0.2.0",
     "next": "12.3.0",
+    "next-videos": "^1.5.0",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.29.0",
     "react": "18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-lite-youtube-embed": "^2.3.1",
+    "react-youtube": "^10.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.11",
