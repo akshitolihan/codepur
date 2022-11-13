@@ -4,9 +4,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-image: url("/bg-1.svg");
-    object-fit: fill; 
-    background-size: cover;
+  background-image: url("/bg-1.svg");
+  background-repeat: repeat-y;
+  object-fit: fill;
+  background-size: 3000px;
 }
 body img {
   width: full;
@@ -34,27 +35,34 @@ a {
 /* My CSS */
 
 /* Active Navbar Link */
-.active-link{
-  color: #69F0AE;
+.active-link {
+  color: #845ec2;
 }
-.bg{
-  background-image: url("/public/bg2.svg");
+.bg {
+  padding-top: -100px;
+  background-image: url("/laptop.jpg");
+  width: auto;
+  /* object-fit: fill;  */
+  /* background-size: cover; */
+  opacity: 60;
 }
-
-
-.typed-out{
+.bg img {
+  opacity: 60;
+}
+.typed-out {
   overflow: hidden;
-  /* border-right: 10px solid orange; */
   white-space: nowrap;
-  animation: 
-  typing 1s forwards;
+  animation: typing 1s forwards;
   font-size: 10px;
   width: auto;
-  /* justify-content: center; */
 }
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 @tailwind base;
 @tailwind components;

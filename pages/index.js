@@ -1,12 +1,17 @@
 import Head from "next/head";
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Code1 from "../components/Code1";
-import Code from "../components/Code1";
 import extra from "../styles/Extra.module.css";
 import Video from "../components/Video";
 import Navbar from "../components/Navbar";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import Footer from "../components/Footer";
+import ReactPlayer from "react-player";
+import { AiFillInstagram, AiFillYoutube, AiFillGithub } from "react-icons/ai";
+// import Tiranga from '../public/Tiranga.mp4';
 export default function Home() {
+  const [isPlaying] = useState(true);
   return (
     <>
       <Head>
@@ -14,20 +19,25 @@ export default function Home() {
         <link rel="icon" href="/codepur-nav.svg" />
       </Head>
       <Navbar />
-      <section className="flex justify-evenly w-full bg-[#ffffff] py-32 pb-8 mb-10">
+
+      <section className="flex justify-evenly w-full bg py-32 pb-8 mb-10">
         <section className="">
           <h1
             id={extra.eu}
-            className="py-4 font-bold text-6xl typed-out text-start my-4 text-[#69F0AE]"
+            className="py-4 font-bold text-6xl typed-out text-start my-4 text-[#845EC2]"
           >
-            codepur
+            Want to Learn Code!
           </h1>
-          <h1 className="font-semibold text-xl text-start text-[#2F4858] my-12">
-            Learn by reading through one of the top platform.
+          <h1
+            id={extra.eu}
+            className="text-lg text-start text-[#9CB0A4] my-6 mb-12 max-w-lg"
+          >
+            Learn to code from the basics through our platform. Choose courses
+            as per your interest and start learning.
           </h1>
-          <h1 className=" p-2 bg-[#69F0AE] rounded-lg text-white font-semibold text-xl animate-bounce1">
-            Start Learning
-          </h1>
+          <button className="px-6 p-2 bg-[#845EC2] rounded-full text-white font-semibold text-xl animate-bounce1">
+            Enroll
+          </button>
         </section>
         <section>
           <div className="flex mt-4 shadow-even rounded-lg p-4 bg-[#2F4858]">
@@ -42,7 +52,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="py-16 bg-[#69F0AE] mt-28 m-4 shadow-even rounded-lg">
+      <section className="py-16 bg-[#845EC2] mt-28 m-4 shadow-even rounded-lg">
         <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           What we have for you!
         </h1>
@@ -61,7 +71,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="my-40 bg-gradient-to-r bg-[#2F4858] m-4 shadow-even rounded-lg">
+      <section className="my-40 bg-gradient-to-r m-4 shadow-even rounded-lg bg-[#2F4858]">
         <h1 className="py-8 text-center text-4xl font-bold text-[#ffffff]">
           What can you learn?
         </h1>
@@ -149,18 +159,40 @@ int main()
         <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           Videos
         </h1>
-        <section className="flex p-2 bg-[#69F0AE] rounded-lg">
-          <Video
-          className=""
-            title="Installation of R and R Studio | How to install R | How to install R Studio | Data Science in R Lang "
-            id="FWDhVBkcTqo"
-            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in rerum neque sequi assumenda quos doloremque? Itaque officia quasi totam ut voluptatum ea molestiae sequi in nobis? Voluptates, aliquam ipsum?"
-            width="w-[664px]"
-          />
+        <section className="flex justify-center">
+          <video
+            className="pt-[-200px] bg-[#ffffff] max-w-lg h-auto w-auto rounded-lg"
+            src="/Nodejs_install.mp4"
+            controls
+            poster="video-poster.jpg"
+          ></video>
         </section>
       </section>
-
-
+      <section className=" bg-[#2F4858]">
+        <section className="flex justify-around ">
+          <section className="max-w-2xl my-10">
+            <h1 className="p-4 text-4xl font-bold text-[#845EC2]">
+              Get certified!
+            </h1>
+            <h1 className="p-4 text-xl font-bold text-[#ffffff]">
+              Complete a course
+            </h1>
+            <button className="px-4 py-2 m-4 bg-[#ffffff] rounded-full text-[#2F4858] font-semibold text-xl">
+              Start Now!!
+            </button>
+          </section>
+          <section className="max-w-2xl">
+            <Image
+              className=""
+              src="/../certificate.svg"
+              alt=""
+              width="500px"
+              height="300px"
+            />
+          </section>
+        </section>
+      </section>
+      <Footer />
     </>
   );
 }

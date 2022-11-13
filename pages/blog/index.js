@@ -6,7 +6,6 @@ const index = () => {
     <>
       <Head>
         <title>Blog</title>
-        <link rel="icon" href="/codepur.svg" />
       </Head>
       <Navbar />
       <h1>Blog</h1>
