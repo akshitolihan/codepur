@@ -8,8 +8,8 @@ import Video from "../components/Video";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ReactPlayer from "react-player";
+import Modal from "../components/Modal";
 import { AiFillInstagram, AiFillYoutube, AiFillGithub } from "react-icons/ai";
-// import Tiranga from '../public/Tiranga.mp4';
 export default function Home() {
   const [isPlaying] = useState(true);
   return (
@@ -18,29 +18,29 @@ export default function Home() {
         <title>Codepur</title>
         <link rel="icon" href="/codepur-nav.svg" />
       </Head>
-      <Navbar />
-
-      <section className="flex justify-evenly w-full bg py-32 pb-8 mb-10">
+      <Navbar bgColor="#" />
+      <section className="bg-white flex justify-evenly w-full py-32 pb-8 mb-10">
         <section className="">
+
           <h1
             id={extra.eu}
-            className="py-4 font-bold text-6xl typed-out text-start my-4 text-[#845EC2]"
+            className="font-bold text-6xl text-start my-6 mb-12 max-w-lg text-[#FF9671] bg-gradient-to-r from-[#FF9671] to-[#FF6F91] text-transparent bg-clip-text hover:bg-gradient-to-l"
           >
             Want to Learn Code!
           </h1>
           <h1
             id={extra.eu}
-            className="text-lg text-start text-[#9CB0A4] my-6 mb-12 max-w-lg"
+            className="text-lg text-start text-[#9CB0A4] my-6 mb-12 max-w-lg "
           >
             Learn to code from the basics through our platform. Choose courses
             as per your interest and start learning.
           </h1>
-          <button className="px-6 p-2 bg-[#845EC2] rounded-full text-white font-semibold text-xl animate-bounce1">
+          <button className="px-6 p-2 bg-[#FF9671] rounded-full text-white font-semibold text-xl animate-bounce1">
             Enroll
           </button>
         </section>
         <section>
-          <div className="flex mt-4 shadow-even rounded-lg p-4 bg-[#2F4858]">
+          <div className="flex mt-4  rounded-lg p-4 bg-[#2F4858]">
             <Image
               className="p-4 rounded-lg overflow-visible"
               src="/code.svg"
@@ -52,7 +52,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="py-16 bg-[#845EC2] mt-28 m-4 shadow-even rounded-lg">
+      <section className="py-16 bg-[#FF9671] mt-28 ">
         <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           What we have for you!
         </h1>
@@ -71,8 +71,8 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="my-40 bg-gradient-to-r m-4 shadow-even rounded-lg bg-[#2F4858]">
-        <h1 className="py-8 text-center text-4xl font-bold text-[#ffffff]">
+      <section className="my-40 bg-gradient-to-r  bg-[#ffffff]">
+        <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           What can you learn?
         </h1>
         <section className="grid md:grid-cols-4 justify-evenly">
@@ -119,11 +119,11 @@ export default function Home() {
         </section>
       </section>
       <section>
-        <section className="grid justify-evenly py-16">
+        <section className="grid justify-evenly py-16 bg-[#FF6F91]">
           <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
             Reading Mateirial!
           </h1>
-          <section className="max-w-2xl p-8 mb bg-[#ffffff] rounded-lg text-[#2F4858] text-justify shadow-even">
+          <section className="max-w-2xl p-8 mb bg-[#ffffff] rounded-lg text-[#2F4858] text-justify ">
             <h1 className="py-2 text-2xl font-bold ">
               What is computer Programming?
             </h1>
@@ -136,7 +136,7 @@ export default function Home() {
             </p>
           </section>
         </section>
-        <div className="mt- py-16">
+        <section className="py-16">
           <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
             Coding Mateirial
           </h1>
@@ -153,31 +153,33 @@ int main()
     return 0;
 }`}
           />
-        </div>
+        </section>
       </section>
-      <section className="grid justify-evenly py-16  my-4 ">
+      <section className="grid justify-evenly  my-4  bg-1">
         <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           Videos
         </h1>
-        <section className="flex justify-center">
+        <Modal />
+
+        {/* <section className="flex justify-center">
           <video
             className="pt-[-200px] bg-[#ffffff] max-w-lg h-auto w-auto rounded-lg"
             src="/Nodejs_install.mp4"
             controls
             poster="video-poster.jpg"
           ></video>
-        </section>
+        </section> */}
       </section>
-      <section className=" bg-[#2F4858]">
+      <section className=" bg-[#ffffff]">
         <section className="flex justify-around ">
           <section className="max-w-2xl my-10">
-            <h1 className="p-4 text-4xl font-bold text-[#845EC2]">
+            <h1 className="p-4 text-4xl font-bold text-[#FF9671]">
               Get certified!
             </h1>
-            <h1 className="p-4 text-xl font-bold text-[#ffffff]">
+            <h1 className="p-4 text-xl font-bold text-[#2F4858]">
               Complete a course
             </h1>
-            <button className="px-4 py-2 m-4 bg-[#ffffff] rounded-full text-[#2F4858] font-semibold text-xl">
+            <button className="px-4 py-2 m-4 bg-[#FF9671] rounded-full text-[#ffffff] font-semibold text-xl">
               Start Now!!
             </button>
           </section>

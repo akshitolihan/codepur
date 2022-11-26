@@ -9,24 +9,24 @@ const learn = () => {
         <title>Learn</title>
       </Head>
       <Navbar />
-      <section className="flex justify-between bg-gradient-to-r from-[#845EC2] via-[#00ACAA] to-[#2F4858]">
+      <section className="flex justify-between bg-gradient-to-r from-[#69F0AE] via-[#00ACAA] to-[#2F4858]">
         <section className="w-1/4 h-96"></section>
         <section className="w-full h-96">
-          <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FFD762]  p-2 shaddow-even rounded-lg ">
-            HTML
-          </section>
+        <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FFD762]  p-2 shaddow-even rounded-lg ">
+        HTML
+      </section>
 
-          <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FF7BA6]  p-2 shaddow-even rounded-lg ">
-            C++
-          </section>
+      <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FF7BA6]  p-2 shaddow-even rounded-lg ">
+        C++
+      </section>
 
-          <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FF9485]  p-2 shaddow-even rounded-lg ">
-            Python
-          </section>
+      <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FF9485]  p-2 shaddow-even rounded-lg ">
+        Python
+      </section>
 
-          <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FFB56B]  p-2 shaddow-even rounded-lg ">
-            JavaScript
-          </section>
+      <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FFB56B]  p-2 shaddow-even rounded-lg ">
+        JavaScript
+      </section>
           {/* <section className="">
             <section className="p-8">
               <Image
@@ -40,6 +40,8 @@ const learn = () => {
           </section> */}
         </section>
       </section>
+
+     
     </>
   );
 };

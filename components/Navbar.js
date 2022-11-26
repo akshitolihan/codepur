@@ -17,7 +17,10 @@ const Navbar = (props) => {
     <>
       <main className="">
         <div className="pb-20 md:pb-20 text-[#2F4858] ">
-          <nav className="justify-around rounded-b-2xl md:justify-around pb-4 w-full mx-auto flex-row fixed bg-[#ffffff] z-[1]">
+          <nav
+            style={{ backgroundColor: `${props.bgColor}` }}
+            className="justify-around rounded-b-2xl md:justify-around pb-4 w-full mx-auto flex-row bg-white fixed z-[1]"
+          >
             <div className={`hidden w-full md:flex justify-around pt-4 -mb-4 `}>
               <div id={extra.edu} className="px-2">
                 <Link href="/" passHref>
@@ -29,7 +32,7 @@ const Navbar = (props) => {
                       height={36}
                       width={36}
                     />
-                    <h1 className="m-2 flex justify-center text-4xl font-[600] tracking-wider mt-2 cursor-pointer text-[#845EC2]">
+                    <h1 className="m-2 flex justify-center text-4xl font-[600] tracking-wider mt-2 cursor-pointer text-[#FF9671]">
                       codepur
                     </h1>
                   </div>
@@ -101,7 +104,7 @@ const Navbar = (props) => {
                 <button className="bg-[#ffffff] px-2 py-1 text-[#2F4858] rounded-3xl mx-1 text-md font-semibold">
                   Log in
                 </button>
-                <button className="bg-[#845EC2] px-2 py-1 text-white rounded-3xl mx-1 text-md font-semibold">
+                <button className="bg-[#FF9671] px-2 py-1 text-white rounded-3xl mx-1 text-md font-semibold">
                   Sign Up
                 </button>
               </div>
@@ -145,7 +148,7 @@ const Navbar = (props) => {
                 </div>
               </div>
             </div>
-            {/* <div className="bg-[#845EC2] p-[2px] w-full my-4 rounded-b-xl fixed z-1"></div> */}
+            {/* <div className="bg-[#FF9671] p-[2px] w-full my-4 rounded-b-xl fixed z-1"></div> */}
           </nav>
         </div>
       </main>

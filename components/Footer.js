@@ -12,9 +12,9 @@ import { AiFillInstagram, AiFillYoutube, AiFillGithub } from "react-icons/ai";
 const Footer = () => {
   return (
     <>
-      <footer className="mt-10 bg-[#ffffff]">
+      <footer className="mt-10 bg-[#ffffff] bg-gradient-to-r from-[#FF9671] to-[#FF6F91] hover:bg-gradient-to-l">
         <section className="flex justify-between ">
-          <section className="bg-[#845EC2] flex justify-center w-full py-10 shadow-even rounded-lg m-2">
+          <section className="flex justify-center w-full py-10  rounded-lg m-2">
             <section className="grid justify-center">
               <Link href="/" passHref>
                 <button
@@ -29,7 +29,7 @@ const Footer = () => {
               </h1>
             </section>
           </section>
-          <section className="bg-[#ADAFFF] w-full py-10 shadow-even rounded-lg m-2">
+          <section className="w-full py-10  rounded-lg m-2">
             <h1 className="flex justify-center text-2xl font-semibold text-[#ffffff]">
               We Social
             </h1>
@@ -39,7 +39,7 @@ const Footer = () => {
               <AiFillGithub className="m-4 text-2xl text-[#ffffff]" />
             </section>
           </section>
-          <section className="bg-[#FEAA2E] w-full py-10 shadow-even rounded-lg m-2 grid justify-center">
+          <section className="w-full py-10  rounded-lg m-2 grid justify-center">
             <h1
               id={extra.caveat}
               className="flex justify-center text-2xl font-semibold text-[#ffffff]"
