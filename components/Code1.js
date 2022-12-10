@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import Prism from "prismjs";
-// import "prism-themes/themes/prism-vs.css";
 import "prism-themes/themes/prism-material-light.css";
 import "prismjs/components/prism-jsx.js";
+import ClipboardCopy from "./Copy";
 
 export default function Page(props) {
   useEffect(() => {
@@ -10,12 +10,17 @@ export default function Page(props) {
   }, []);
   return (
     <>
-      <div className="flex justify-center px-4 ">
-        <main className="max-w-2xl lg:w-[900px] sm:w-[700px] w-96">
-          <pre className="shadow-lg rounded-lg bg-black">
-            <code className="language-jsx  bg-white">{props.code}</code>
-          </pre>
-        </main>
+      <div className="flex justify-center px-4">
+        <div className="flex justify-center">
+          <div className="max-w-2xl lg:w-[800px] sm:w-[700px] w-96">
+            <pre className="shadow-lg rounded-lg">
+              <code className="language-jsx">{props.code}</code>
+            </pre>
+          </div>
+            <div className="bg-[#FF9671] h-8 text-white rounded-full text-base font-semibold px-2 py-1 my-2 m4">
+              <ClipboardCopy copyText={props.text} />
+            </div>
+        </div>
       </div>
     </>
   );

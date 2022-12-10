@@ -9,39 +9,38 @@ const learn = () => {
         <title>Learn</title>
       </Head>
       <Navbar />
-      <section className="flex justify-between bg-gradient-to-r from-[#69F0AE] via-[#00ACAA] to-[#2F4858]">
-        <section className="w-1/4 h-96"></section>
-        <section className="w-full h-96">
-        <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FFD762]  p-2 shaddow-even rounded-lg ">
-        HTML
-      </section>
+      <section className="grid md:flex justify-around mt-16">
+        <div className="flex m-4 rounded-lg p-4">
+          <Image
+            className="p-4 rounded-lg overflow-visible"
+            src="/images/fear.jpg"
+            alt="logo"
+            height={300}
+            width={500}
+          />
+        </div>
 
-      <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FF7BA6]  p-2 shaddow-even rounded-lg ">
-        C++
-      </section>
+        <section>
+          <section className="relative top-10 justify-start p-4 m-4">
+            {/* <span className="text-start font-bold  py-2 text-[#465775] p-1">
+              Don&apos;t fear,
+            </span> */}
+            <span className="a-width text-start font-bold  py-2 bg-gradient-to-r from-[#FF9671] to-[#FF6F91] text-transparent bg-clip-text hover:bg-gradient-to-l p-1">
+              <span className="text-start font-bold  py-2 text-[#465775] p-1">
+                Don&apos;t fear,
+              </span>{" "}
+              learn the right way.
+            </span>
 
-      <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FF9485]  p-2 shaddow-even rounded-lg ">
-        Python
-      </section>
-
-      <section className="h-96 m-10 w-auto text-xl font-semibold text-[#ffffff] bg-[#FFB56B]  p-2 shaddow-even rounded-lg ">
-        JavaScript
-      </section>
-          {/* <section className="">
-            <section className="p-8">
-              <Image
-                className="w-full rounded-xl filter brightness-  backdrop-filter backdrop-hue-rotate-90 opacity-75 filter: drop-shadow(0 4px 3px rgb(105, 240, 174)) contrast-200 drop-shadow-lg"
-                src="/laptop.jpg"
-                alt=""
-                width="500px"
-                height="300px"
-              />
-            </section>
-          </section> */}
+            <h1 className="text-start  font-[500] py-6 text-[#465775]">
+              Get rid of your fear.
+            </h1>
+            <button className="p-2 px-4 text-lg my-4 bg-[#FF9671] rounded-full text-white font-semibold">
+              Start Learning now!
+            </button>
+          </section>
         </section>
       </section>
-
-     
     </>
   );
 };

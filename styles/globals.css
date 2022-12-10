@@ -67,13 +67,12 @@ a {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
-
   z-index: 2;
 }
 
 .modal-content {
-  min-height: 300px;
-  padding: 25px;
+  /* min-height: 300px;
+  padding: 25px; */
 }
 
 @keyframes typing {
@@ -87,4 +86,8 @@ a {
 
 .bg-1{
   background-image: linear-gradient(to right bottom, #ff6f91, #ff7689, #ff7d81, #ff847b, #ff8c76, #ff9372, #ff9a6e, #ffa16b, #ffaa67, #ffb363, #ffbd61, #ffc75f);
+}
+
+.a-width{
+  font-size: clamp(1rem, -0.875rem + 8.333333vw, 3.5rem);
 }

@@ -16,10 +16,10 @@ const Navbar = (props) => {
   return (
     <>
       <main className="">
-        <div className="pb-20 md:pb-20 text-[#2F4858] ">
+        <div className="pb-20 md:pb-20 text-[#2F4858]">
           <nav
             style={{ backgroundColor: `${props.bgColor}` }}
-            className="justify-around rounded-b-2xl md:justify-around pb-4 w-full mx-auto flex-row bg-white fixed z-[1]"
+            className="justify-around rounded-b-2xl md:justify-around pb-4 w-full mx-auto flex-row bg-white fixed z-[1] shadow-even"
           >
             <div className={`hidden w-full md:flex justify-around pt-4 -mb-4 `}>
               <div id={extra.edu} className="px-2">
@@ -109,11 +109,13 @@ const Navbar = (props) => {
                 </button>
               </div>
             </div>
+
+            
             <div className="md:hidden w-full justify-evenly">
               <div className="flex justify-around">
                 <button
                   type="button"
-                  className="text-[#ffffff] "
+                  className="text-[#000000] "
                   onClick={handleClick}
                 >
                   <CgMenuLeftAlt className="text-3xl" />
@@ -128,15 +130,15 @@ const Navbar = (props) => {
                   </Link>
                 </div>
                 <div className="flex pt-4">
-                  <MdEmojiPeople className="text-3xl text-[#ffffff]" />
+                  <MdEmojiPeople className="text-3xl text-[#000000]" />
                 </div>
               </div>
               <div className={`${active ? "" : "hidden"}   w-full `}>
-                <div className="w-full flex jusitfy-around flex-col text-[#ffffff] px-8">
+                <div className="w-full flex jusitfy-around flex-col text-[#000000] px-8">
                   <Link href="/">
                     <a className="w-auto py-2 rounded text-md">Home</a>
                   </Link>
-                  <Link href="/lear">
+                  <Link href="/learn">
                     <a className="w-auto py-2 rounded text-md">Learn</a>
                   </Link>
                   <Link href="/blog">

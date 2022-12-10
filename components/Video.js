@@ -12,7 +12,7 @@ const Video = (props) => {
             aspectWidth={16}
             id={props.id}
             title={props.title}
-            poster="hqdefault"  
+            poster="hqdefault"
           />
         </div>
       </div>

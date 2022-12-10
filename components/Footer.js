@@ -40,12 +40,12 @@ const Footer = () => {
             </section>
           </section>
           <section className="w-full py-10  rounded-lg m-2 grid justify-center">
-            <h1
+            <section
               id={extra.caveat}
               className="flex justify-center text-2xl font-semibold text-[#ffffff]"
             >
-              Made with ❤ by Villager
-            </h1>
+              Made with <span className="text-[#ff6058] px-2"> ❤ </span>  by Villager
+            </section>
             <section className="flex justify-center">
               <button
                 id={extra.caveat}

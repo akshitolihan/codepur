@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Code from "../components/Code";
 import Code1 from "../components/Code1";
 import extra from "../styles/Extra.module.css";
 import Video from "../components/Video";
@@ -10,6 +11,7 @@ import Footer from "../components/Footer";
 import ReactPlayer from "react-player";
 import Modal from "../components/Modal";
 import { AiFillInstagram, AiFillYoutube, AiFillGithub } from "react-icons/ai";
+import Copy from "../components/Copy";
 export default function Home() {
   const [isPlaying] = useState(true);
   return (
@@ -19,9 +21,8 @@ export default function Home() {
         <link rel="icon" href="/codepur-nav.svg" />
       </Head>
       <Navbar bgColor="#" />
-      <section className="bg-white flex justify-evenly w-full py-32 pb-8 mb-10">
+      <section className="bg-white grid md:flex justify-evenly w-full py-32 pb-8 mb-10">
         <section className="">
-
           <h1
             id={extra.eu}
             className="font-bold text-6xl text-start my-6 mb-12 max-w-lg text-[#FF9671] bg-gradient-to-r from-[#FF9671] to-[#FF6F91] text-transparent bg-clip-text hover:bg-gradient-to-l"
@@ -119,7 +120,7 @@ export default function Home() {
         </section>
       </section>
       <section>
-        <section className="grid justify-evenly py-16 bg-[#FF6F91]">
+        <section className="grid justify-evenly py-16 bg-[#FF9671]">
           <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
             Reading Mateirial!
           </h1>
@@ -140,35 +141,35 @@ export default function Home() {
           <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
             Coding Mateirial
           </h1>
-          <Code1
-            heading="Program to print in C++"
-            code={`#include <iostream>
+          <section className="flex justify-center relative -left-6">
+            <Code1
+            text = {`// Your First C++ Program
 
-using namespace std;
+#include <iostream>
 
-int main()
-{
-    cout<<"Hello Coders";
-
+int main() {
+    std::cout << "Hello World!";
     return 0;
-}`}
-          />
+}
+`}
+              code={`// Your First C++ Program
+
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+`}
+            />
+          </section>
         </section>
       </section>
-      <section className="grid justify-evenly  my-4  bg-1">
+      <section className=" justify-evenly my-4  bg-1">
         <h1 className="py-8 text-center text-4xl font-bold text-[#2F4858]">
           Videos
         </h1>
         <Modal />
-
-        {/* <section className="flex justify-center">
-          <video
-            className="pt-[-200px] bg-[#ffffff] max-w-lg h-auto w-auto rounded-lg"
-            src="/Nodejs_install.mp4"
-            controls
-            poster="video-poster.jpg"
-          ></video>
-        </section> */}
       </section>
       <section className=" bg-[#ffffff]">
         <section className="flex justify-around ">
