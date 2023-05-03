@@ -13,13 +13,13 @@ export default function Page(props) {
       <div className="flex justify-center px-4">
         <div className="flex justify-center">
           <div className="max-w-2xl lg:w-[800px] sm:w-[700px] w-96">
-            <pre className="shadow-lg rounded-lg">
+            <pre className="flex justify-between shadow-lg rounded-lg">
               <code className="language-jsx">{props.code}</code>
+              <div className="bg-[#FF9671] h-8 text-white rounded-full text-base font-semibold px-2 py-1">
+                <ClipboardCopy copyText={props.text} />
+              </div>
             </pre>
           </div>
-            <div className="bg-[#FF9671] h-8 text-white rounded-full text-base font-semibold px-2 py-1 my-2 m4">
-              <ClipboardCopy copyText={props.text} />
-            </div>
         </div>
       </div>
     </>

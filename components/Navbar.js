@@ -101,16 +101,19 @@ const Navbar = (props) => {
                 </span>
               </span>
               <div className="flex p-4">
-                <button className="bg-[#ffffff] px-2 py-1 text-[#2F4858] rounded-3xl mx-1 text-md font-semibold">
-                  Log in
-                </button>
-                <button className="bg-[#FF9671] px-2 py-1 text-white rounded-3xl mx-1 text-md font-semibold">
-                  Sign Up
-                </button>
+                <Link href="/auth/login">
+                  <button className="bg-[#ffffff] px-2 py-1 text-[#2F4858] rounded-3xl mx-1 text-md font-semibold">
+                    Log in
+                  </button>
+                </Link>
+                <Link href="/auth/register">
+                  <button className="bg-[#FF9671] px-2 py-1 text-white rounded-3xl mx-1 text-md font-semibold">
+                    Sign Up
+                  </button>
+                </Link>
               </div>
             </div>
 
-            
             <div className="md:hidden w-full justify-evenly">
               <div className="flex justify-around">
                 <button
@@ -150,7 +153,6 @@ const Navbar = (props) => {
                 </div>
               </div>
             </div>
-            {/* <div className="bg-[#FF9671] p-[2px] w-full my-4 rounded-b-xl fixed z-1"></div> */}
           </nav>
         </div>
       </main>
