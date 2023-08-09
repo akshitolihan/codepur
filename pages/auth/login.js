@@ -45,7 +45,7 @@ const login = () => {
                 type="password"
               />
               <section className="flex justify-end">
-                <Link href="/auth/login">
+                <Link href="/auth/forgot">
                   <a
                     href=""
                     className="text-center text-[#465775] font-semibold text-sm p-2"
